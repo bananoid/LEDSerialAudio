@@ -1,6 +1,6 @@
 #include <Arduino.h>
 
-// #define IS_AUDIO_BOARD
+#define IS_AUDIO_BOARD
 
 #ifdef IS_AUDIO_BOARD
 #include "AudioBoard.h"

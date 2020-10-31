@@ -35,9 +35,12 @@ void AudioBoard::begin()
   AudioMemory(160);
   sgtl5000_1.enable();
   sgtl5000_1.volume(0.7);
+
   sgtl5000_1.inputSelect(AUDIO_INPUT_LINEIN);
+  // sgtl5000_1.inputSelect(AUDIO_INPUT_MIC);
+
+  sgtl5000_1.micGain(10); // from 0db to 63db
   sgtl5000_1.lineInLevel(0);
-  // sgtl5000_1.micGain(30); // from 0db to 63db
 
   // try 2000000
   // audioPacketSerial.begin(115200, 6); // 0 is Serial, 1 is Serial1

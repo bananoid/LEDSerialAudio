@@ -43,7 +43,7 @@ void LEDsBoard::update()
   {
     float osc = sinf(time * 0.003 + i * 0.08) * 0.5 + 0.5;
 
-    leds.setPixel(i, packet[0], osc * 255, packet[2]);
+    leds.setPixel(i, packet[0], 0, packet[2]);
     // leds.setPixel(i, 255, 0, 0);
     // leds.setPixel(i, 255, 0, 0);
   }

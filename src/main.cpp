@@ -10,7 +10,7 @@
 
 void setup()
 {
-  Serial6.begin(80000000);
+  Serial4.begin(80000000);
   Serial.begin(2000000);
 
   // while (!Serial && millis() < 3000)

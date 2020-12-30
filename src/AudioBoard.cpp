@@ -48,7 +48,7 @@ void AudioBoard::begin()
   // audioPacketSerial.setPacketHandler(&onPacketReceived);
 
   audioPacketSerial.begin(80000000);
-  audioPacketSerial.setStream(&Serial6);
+  audioPacketSerial.setStream(&Serial4);
 }
 
 void AudioBoard::update()
